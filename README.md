@@ -1,7 +1,7 @@
 # Product Analytics: Time to Conversion Behavior
 
 ## Goal
-Understand how long it takes users to complete a purchase after first arriving on the website on a given day, and identify behavior patterns that influence decision speed.
+Understand how long it takes users to complete a purchase after first arriving on the website on a given day, and identify behavioral patterns that influence decision speed.
 
 ## Business context
 The Product Manager wanted to understand **purchase decision speed** on the e-commerce platform: 
@@ -24,8 +24,8 @@ This analysis helps evaluate **funnel efficiency**, identify **friction points**
 ### 1. Time-to-purchase modeling (SQL)
 - Identified each user's **first visit of the day** (`session_start`)
 - Identified each user's **first purchase on the same day**
-- Calculated **minutes to purchases** as the difference between the two timestamps
-- Aggregate results **daily**, using:
+- Calculated **minutes to purchase** as the difference between the two timestamps
+- Aggregated results **daily**, using:
   - **Average** (captures overall load and long sessions)
   - **Median** (reduces the impact of outliers)
 
@@ -45,7 +45,7 @@ This analysis helps evaluate **funnel efficiency**, identify **friction points**
 ## Key findings
 - **Most shoppers decide quickly**
   - ~65% of purchases occur within **30 minutes**
-  - Median time to purchase remains stable at **~15-17 mintues**
+  - Median time to purchase remains stable at **~15-17 minutes**
 - **Browsing does not equal intent**
   - Only **~15% of users who view products begin checkout**
   - Sharpest drop occurs **after browsing**
@@ -68,10 +68,10 @@ This analysis helps evaluate **funnel efficiency**, identify **friction points**
   - Measure impact on time-to-purchase and conversion speed
 
 ### Limitations
-- Missing or inconsistent tracing for some funnel events limits precision
+- Missing or inconsistent tracking for some funnel events limits precision
 - Lack of session identifiers prevents deeper browsing-depth analysis
-- Same-day analysis does not capture capture long consideration cycles
-- Results are **directonal**, not causal
+- Same-day analysis does not capture long consideration cycles
+- Results are **directional**, not causal
 
 ## Deliverables
 - **Slides:** Executive presentation with visual analysis [slides](`slides`)
