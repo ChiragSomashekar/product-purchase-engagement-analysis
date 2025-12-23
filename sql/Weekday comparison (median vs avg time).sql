@@ -13,6 +13,8 @@ SELECT
   ROUND(AVG(TIMESTAMP_DIFF(purchase_time, view_time, MINUTE)), 2) AS avg_minutes_to_purchase
 FROM funnel_events
 WHERE purchase_time IS NOT NULL
+  AND view_time IS NOT NULL
+  AND purchase_time >= view_time
 GROUP BY weekday
 ORDER BY
   CASE weekday
