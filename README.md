@@ -74,5 +74,5 @@ This analysis helps evaluate **funnel efficiency**, identify **friction points**
 - Results are **directional**, not causal
 
 ## Deliverables
-- **Slides:** Executive presentation with visual analysis [slides](`slides`)
-- **SQL:** Queries used for time-to-purchase and funnel modeling [sql](`sql`)
+- **Slides:** Executive presentation with visual analysis [slides](slides)
+- **SQL:** Queries used for time-to-purchase and funnel modeling [sql](sql)
