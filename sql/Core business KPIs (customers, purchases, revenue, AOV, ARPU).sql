@@ -12,6 +12,6 @@ SELECT
   COUNT(DISTINCT user_pseudo_id) AS total_customers,
   SUM(user_purchases) AS total_purchases,
   ROUND(SUM(revenue), 2) AS total_revenue,
-  ROUND(SUM(revenue) / SUM(user_purchases), 2) AS AOV,
-  ROUND(SUM(revenue) / COUNT(DISTINCT user_pseudo_id), 2) AS ARPU
+  ROUND(SAFE_DIVIDE(SUM(revenue) / SUM(user_purchases)), 2) AS AOV,
+  ROUND(SAFE_DIVIDE(SUM(revenue) / COUNT(DISTINCT user_pseudo_id)), 2) AS ARPU
 FROM purchases
